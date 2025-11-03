@@ -39,9 +39,9 @@ It uses **LLM-powered reasoning**, **trusted web-sourced medical knowledge**, an
 
 ```mermaid
 flowchart TD
-    A[User Inputs Symptoms / Health Query] --> B[LLM Interprets Condition]
-    B --> C[Query Tavily API for Top 3 Reliable Sources]
-    C --> D[Extract & Scrape Web Content]
-    D --> E[Summarize Using LLM + Extract Key Insights]
-    E --> F[Generate Causes + Personalized Lifestyle Recommendations]
-    F --> G[Store Conversation & Health Context (Memory)]
+    A["User Inputs Symptoms or Health Query"] --> B["LLM Interprets Possible Health Condition"]
+    B --> C["Tavily API Fetches Top 3 Reliable Medical Sources"]
+    C --> D["Extract and Scrape Web Content"]
+    D --> E["LLM Summarizes Content and Extracts Key Insights"]
+    E --> F["Generate Causes and Personalized Lifestyle Recommendations"]
+    F --> G["Store Conversation and User Health Context in Memory"]
