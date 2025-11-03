@@ -10,15 +10,15 @@ It uses **LLM-powered reasoning**, **trusted web-sourced medical knowledge**, an
 
 ## Features
 
-**AI Health & Wellness Chatbot** — Provides educational guidance for symptoms, habits, diet & lifestyle  
-**Symptom-to-Cause Reasoning** — LangGraph maps symptoms → possible causes → lifestyle improvements  
-**Smart Medical Knowledge Retrieval with Tavily API** — Fetches top 3 reliable medical articles + source links  
-**Multi-Source Content Extraction** — Summarizes and extracts insights (beyond Wikipedia)  
-**Conversational Memory** — LangChain memory stores user health context for continuous, personalized chats  
-**Multi-Modal AI Support** *(in progress)* — Understands medical reports & documents, not just text  
-**Modern UI** — Next.js + TailwindCSS chat interface  
-**Gemini-Powered Reasoning** — Uses Google Gemini for interpretation, summarization & guidance  
-**Modular AI Pipeline** — Extensible for nutrition plans, workout programs, and wearable integrations  
+** * AI Health & Wellness Chatbot** — Provides educational guidance for symptoms, habits, diet & lifestyle  
+** * Symptom-to-Cause Reasoning** — LangGraph maps symptoms → possible causes → lifestyle improvements  
+** * Smart Medical Knowledge Retrieval with Tavily API** — Fetches top 3 reliable medical articles + source links  
+** * Multi-Source Content Extraction** — Summarizes and extracts insights (beyond Wikipedia)  
+** * Conversational Memory** — LangChain memory stores user health context for continuous, personalized chats  
+** * Multi-Modal AI Support** *(in progress)* — Understands medical reports & documents, not just text  
+** * Modern UI** — Next.js + TailwindCSS chat interface  
+** * Gemini-Powered Reasoning** — Uses Google Gemini for interpretation, summarization & guidance  
+** * Modular AI Pipeline** — Extensible for nutrition plans, workout programs, and wearable integrations  
 
 ---
 
@@ -32,7 +32,6 @@ It uses **LLM-powered reasoning**, **trusted web-sourced medical knowledge**, an
 | **LLM Model** | Google Gemini |
 | **Data Extraction** | Tavily result scraping + targeted web scraping |
 | **Memory** | LangChain Conversational Memory |
-| **Deployment (future)** | Vercel / Docker / Cloud Functions |
 
 ---
 
