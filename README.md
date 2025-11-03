@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered Health & Wellness Knowledge Coach  
+_A Personalized AI Health & Fitness Guidance Chatbot built with Next.js, TailwindCSS, LangChain, LangGraph & Tavily_
 
-## Getting Started
+The **AI-Powered Health & Wellness Knowledge Coach** is an intelligent conversational chatbot designed to provide **educational health insights, symptom-based wellness guidance, and personalized lifestyle improvement recommendations**.  
+It uses **LLM-powered reasoning**, **trusted web-sourced medical knowledge**, and **contextual memory** to simulate a personalized health coaching experience.
 
-First, run the development server:
+> ⚠️ *This system does not provide medical diagnoses. It offers educational health guidance only.*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**AI Health & Wellness Chatbot** — Provides educational guidance for symptoms, habits, diet & lifestyle  
+**Symptom-to-Cause Reasoning** — LangGraph maps symptoms → possible causes → lifestyle improvements  
+**Smart Medical Knowledge Retrieval with Tavily API** — Fetches top 3 reliable medical articles + source links  
+**Multi-Source Content Extraction** — Summarizes and extracts insights (beyond Wikipedia)  
+**Conversational Memory** — LangChain memory stores user health context for continuous, personalized chats  
+**Multi-Modal AI Support** *(in progress)* — Understands medical reports & documents, not just text  
+**Modern UI** — Next.js + TailwindCSS chat interface  
+**Gemini-Powered Reasoning** — Uses Google Gemini for interpretation, summarization & guidance  
+**Modular AI Pipeline** — Extensible for nutrition plans, workout programs, and wearable integrations  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | Next.js, TailwindCSS |
+| **AI / LLM Orchestration** | LangChain, LangGraph |
+| **Search & Knowledge Retrieval** | **Tavily Web Search API** |
+| **LLM Model** | Google Gemini |
+| **Data Extraction** | Tavily result scraping + targeted web scraping |
+| **Memory** | LangChain Conversational Memory |
+| **Deployment (future)** | Vercel / Docker / Cloud Functions |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## System Workflow
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```mermaid
+flowchart TD
+    A[User Inputs Symptoms / Health Query] --> B[LLM Interprets Condition]
+    B --> C[Query Tavily API for Top 3 Reliable Sources]
+    C --> D[Extract & Scrape Web Content]
+    D --> E[Summarize Using LLM + Extract Key Insights]
+    E --> F[Generate Causes + Personalized Lifestyle Recommendations]
+    F --> G[Store Conversation & Health Context (Memory)]
